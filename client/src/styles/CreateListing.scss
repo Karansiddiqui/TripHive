@@ -1,4 +1,4 @@
-@import "../styles/variables.scss";
+@import "./variables.module.scss";
 @import "../styles/breakpoints.scss";
 
 .create-listing {
@@ -62,7 +62,7 @@
         border: 1px solid $grey;
         border-radius: 10px;
         cursor: pointer;
-        transition: 0.2s ease;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
         &_icon {
           font-size: 30px;
@@ -76,14 +76,16 @@
         }
 
         &:hover {
-          border: 2px solid $pinkred;
           background-color: $lightgrey;
+          box-shadow: 0 0 0 2px $pinkred;
+          border: $pinkred;
         }
       }
 
       .selected {
-        border: 2px solid $pinkred;
         background-color: $lightgrey;
+        box-shadow: 0 0 0 2px $pinkred;
+        border: $pinkred;
       }
     }
 
@@ -239,14 +241,16 @@
         }
 
         &:hover {
-          border: 2px solid $pinkred;
           background-color: $lightgrey;
+          box-shadow: 0 0 0 2px $pinkred;
+          border: $pinkred;
         }
       }
 
       .selected {
-        border: 2px solid $pinkred;
         background-color: $lightgrey;
+        box-shadow: 0 0 0 2px $pinkred;
+        border: $pinkred;
       }
     }
 
